@@ -1,13 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply p-5 font-primary antialiased;
+@layer base {
+  body {
+    @apply bg-grayf6 font-primary;
+  }
 }
-
-.button {
-  @apply text-white font-semibold p-3 rounded-lg flex items-center justify-center bg-[#0BAB7C] w-[295px];
-}
-/* JIT mode bg-[#ffa400] */
